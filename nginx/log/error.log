@@ -1,0 +1,3 @@
+2020/02/06 00:23:55 [error] 6#6: *1 directory index of "/usr/share/nginx/html/" is forbidden, client: 172.27.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
+2020/02/06 00:38:14 [error] 6#6: *1 directory index of "/usr/share/nginx/html/" is forbidden, client: 172.27.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
+2020/02/06 00:38:15 [error] 6#6: *1 directory index of "/usr/share/nginx/html/" is forbidden, client: 172.27.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"

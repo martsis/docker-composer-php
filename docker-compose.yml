@@ -1,0 +1,35 @@
+version: '3'
+services: 
+    nginx:
+        image: nginx:latest
+        ports:
+            - '80:80'
+            - '433:443'
+        volumes: 
+            - ../:/var/www/html/site
+            - ./nginx/conf.d:/etc/nginx/conf.d:ro
+            - ./nginx/logs:/var/log/nginx
+            - ./nginx/html:/usr/share/nginx/html/
+        links:
+            - php
+        restart: always
+    php:
+        build: ./php
+        image: bitrix-php
+        volumes: 
+            - ../:/var/www/html/site
+        restart: always
+        environment:
+            MYSQL_DATABASE: admin_base
+            MYSQL_ROOT_PASSWORD: admin_base
+            PGDATABASE: admin_base
+            PGPASSWORD: admin_base
+        links: 
+            - mariadb
+    mariadb:
+        image: mariadb
+        environment:
+            MYSQL_ROOT_PASSWORD: admin_base
+            MYSQL_DATABASE: admin_base
+            MYSQL_USER: admin_base
+            MYSQL_PASSWORD: admin_base
