@@ -1,3 +1,0 @@
-172.27.0.1 - - [06/Feb/2020:00:23:55 +0300] "GET / HTTP/1.1" 403 555 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) snap Chromium/79.0.3945.130 Chrome/79.0.3945.130 Safari/537.36"
-172.27.0.1 - - [06/Feb/2020:00:38:14 +0300] "GET / HTTP/1.1" 403 555 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) snap Chromium/79.0.3945.130 Chrome/79.0.3945.130 Safari/537.36"
-172.27.0.1 - - [06/Feb/2020:00:38:15 +0300] "GET / HTTP/1.1" 403 555 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) snap Chromium/79.0.3945.130 Chrome/79.0.3945.130 Safari/537.36"
