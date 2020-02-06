@@ -28,6 +28,8 @@ services:
             - mariadb
     mariadb:
         image: mariadb
+        volumes: 
+            - ./db/:/home/db
         environment:
             MYSQL_ROOT_PASSWORD: admin_base
             MYSQL_DATABASE: admin_base
