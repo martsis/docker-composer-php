@@ -14,7 +14,7 @@ services:
             - php
         restart: always
     php:
-        build: ./php
+        image: martsis/php:7.3-fpm
         volumes: 
             - ../:/var/www/html/site
         environment:
