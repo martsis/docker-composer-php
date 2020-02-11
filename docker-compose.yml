@@ -35,11 +35,3 @@ services:
             MYSQL_USER: admin_base
             MYSQL_PASSWORD: admin_base
         restart: always
-
-    phpmyadmin:
-        image: phpmyadmin/phpmyadmin
-        container_name: phpmyadmin
-        ports:
-            - 8090:80
-        links:
-            - mariadb:db
