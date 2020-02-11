@@ -16,6 +16,7 @@ services:
     php:
         image: martsis/php:7.3-fpm
         volumes: 
+            - ./php/php.ini:/usr/local/etc/php/conf.d/40-custom.ini
             - ../:/var/www/html/site
         environment:
             MYSQL_DATABASE: admin_base
